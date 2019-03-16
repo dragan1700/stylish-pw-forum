@@ -125,3 +125,9 @@ a.ipsType_sectionTitle:hover,
 	position: relative;
 	top: -4px;
 }
+.ipsUserPhoto_mini img {
+	width: 28px;
+	height: 28px;
+	max-width: 28px;
+	border-radius: 14px;
+}
