@@ -1,0 +1,139 @@
+/*
+
+To be used with a browser extension like Stylish.
+Font "Inter" needs to be installed on the system.
+In settings (where should it be used?), use "URL beginning with" https://processwire.com/talk/
+This is very hacky, and personal tastes differ.
+
+What does it do?
+
+- Improves legibility (font-sizes, line-heights)
+- Smaller main container (max-width)
+- Fix avatar image squashing.
+- Some (to me) un-needed items hidden (mark all items as read)
+- Hover background-color on rows
+- Removed zebra styling
+- Increased color contrast (a11y)
+
+*/
+
+body, .ipsType_normal {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.ipsNavBar_primary > ul > li > a {
+    color: white;
+}
+
+.ipsNavBar_secondary > li > a {
+    color: rgba(53, 60, 65, 0.85);
+}
+
+.ipsLayout_container, #ipsLayout_body {
+    max-width: 1280px;
+}
+
+body, table, tr, td, thead, main, nav, footer, p, span, div, 
+.uk-navbar-item, .uk-navbar-nav > li > a, 
+.uk-navbar-toggle, #html-body, 
+h1, h2, h3, h4, h5, li, .uk-h1, .uk-h2, .uk-h3, .uk-h4 {
+    font-family: Inter, sans-serif !important;
+}
+
+dd.ipsDataItem_stats_type.ipsType_light,
+.ipsDataItem_statsLarge .ipsDataItem_stats_number,
+li.ipsType_blendLinksm, 
+li.ipsType_light,
+li.ipsType_blendLinks,
+.ipsType_reset,
+.cAuthorPane {
+    font-size: 0.8rem;
+}
+
+h3.ipsType_reset.ipsWidget_title,
+.ipsPager_type {
+	font-size: 0.8rem !important;
+}
+
+.ipsPager .ipsPager_next a:after, 
+.ipsPager .ipsPager_prev a:after {
+	font-size: inherit;
+}
+
+div[data-role=memberSignature] {
+	font-size: 0.8rem;
+}
+
+.ipsBreadcrumb > ul > li {
+	color: #000000;
+}
+
+html[dir="ltr"] .ipsDataList.ipsDataList_reducedSpacing .ipsDataItem_icon {
+	min-width: 44px;
+}
+
+.ipsBreadcrumb.ipsBreadcrumb_top {
+	padding: 0;
+	opacity: 1;
+}
+
+#ipsLayout_sidebar {
+	padding: 51px 0 15px 0;
+}
+
+.ipsWidget.ipsWidget_vertical .ipsWidget_title, .ipsWidget.ipsWidget_horizontal .ipsWidget_title {
+padding: 11px;
+}
+
+html[dir="ltr"] .ipsWidget .ipsDataItem_main.cWidgetComments {
+	line-height: 1.2;
+}
+.ipsDataItem_meta.ipsType_richText.ipsContained {
+	line-height: 1.4;
+}
+.ipsDataItem_category {
+	display: none;
+}
+
+.ipsDataList.ipsDataList_zebra .ipsDataItem:not( .ipsDataItem_selected ):not( .ipsModerated ):not( .ipsDataItem_new ):not( .ipsDataItem_success ):not( .ipsDataItem_warning ):not( .ipsDataItem_error ):not( .ipsDataItem_info ):not( .ipsDataItem_status ):nth-child(even) {
+	background: transparent;
+}
+.ipsDataList:not( .ipsGrid ) .ipsDataItem:last-child, .ipsDataList.ipsDataList_zebra > .ipsDataItem {
+	border-bottom: 1px solid #e2e2e2;
+}
+
+
+.ipsType_sectionTitle {
+	font-size: 1rem;
+	background: #2480e6;
+	color: #ffffff;
+	letter-spacing: 1px;
+}
+
+a.ipsType_sectionTitle, 
+.ipsType_sectionTitle a {
+	color: #ffffff;
+}
+
+a.ipsType_sectionTitle:hover, 
+.ipsType_sectionTitle a:hover {
+	color: #000;
+}
+
+.cForumToggle {
+	opacity: 1;
+}
+
+.cForumList .ipsDataItem_main {
+	padding-left: 1rem;
+}
+
+.ipsWidget.ipsWidget_vertical .ipsWidget_title,
+.ipsType_sectionTitle {
+	text-transform: none;
+	font-weight: 100;
+}
+.ipsDataItem:hover {
+	background-color: aliceblue !important;
+}
