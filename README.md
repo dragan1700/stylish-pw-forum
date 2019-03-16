@@ -1,4 +1,4 @@
-# stylish-pw-forum
+# pw-forum-styles
 Custom styles for the ProcessWire forum
 
 To be used with a browser extension like Stylish.
