@@ -1,6 +1,24 @@
-body, .ipsType_normal {
+* {
+    font-family: Inter, sans-serif;
+}
+body,
+.ipsType_normal {
     font-size: 16px;
     line-height: 1.6;
+}
+
+html:not(.section-sites):not(.template-blog) .uk-navbar-nav > li.uk-active > a::after,
+.uk-background-primary .pw-plug > div,
+.uk-background-secondary .pw-plug > div,
+.uk-section-primary .pw-plug > div,
+.uk-section-secondary .pw-plug > div,
+.ipsApp .ipsButton_important,
+#elMobileNav,
+#masthead,
+#ipsLayout_header header,
+.uk-background-primary,
+.uk-section-primary {
+    background: #405d7d;
 }
 
 .ipsNavBar_primary > ul > li > a {
@@ -8,23 +26,57 @@ body, .ipsType_normal {
 }
 
 .ipsNavBar_secondary > li > a {
-    color: rgba(53, 60, 65, 0.85);
+    color: #405d7d;
 }
 
-.ipsLayout_container, #ipsLayout_body {
+h1 a,
+h2 a,
+h3 a,
+.uk-h1 a,
+.uk-h2 a,
+.uk-h3 a {
+    color: white !important;
+}
+
+h3.ipsType_reset.ipsWidget_title span a {
+    color: #e83561 !important;
+}
+.ipsLayout_container,
+#ipsLayout_body {
     max-width: 1280px;
 }
 
-body, table, tr, td, thead, main, nav, footer, p, span, div, 
-.uk-navbar-item, .uk-navbar-nav > li > a, 
-.uk-navbar-toggle, #html-body, 
-h1, h2, h3, h4, h5, li, .uk-h1, .uk-h2, .uk-h3, .uk-h4 {
+body,
+table,
+tr,
+td,
+thead,
+main,
+nav,
+footer,
+p,
+span,
+div,
+.uk-navbar-item,
+.uk-navbar-nav > li > a,
+.uk-navbar-toggle,
+#html-body,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4 {
     font-family: Inter, sans-serif !important;
 }
 
 dd.ipsDataItem_stats_type.ipsType_light,
 .ipsDataItem_statsLarge .ipsDataItem_stats_number,
-li.ipsType_blendLinksm, 
+li.ipsType_blendLinksm,
 li.ipsType_light,
 li.ipsType_blendLinks,
 .ipsType_reset,
@@ -34,100 +86,100 @@ li.ipsType_blendLinks,
 
 h3.ipsType_reset.ipsWidget_title,
 .ipsPager_type {
-	font-size: 0.8rem !important;
+    font-size: 0.8rem !important;
 }
 
-.ipsPager .ipsPager_next a:after, 
+.ipsPager .ipsPager_next a:after,
 .ipsPager .ipsPager_prev a:after {
-	font-size: inherit;
+    font-size: inherit;
 }
 
 div[data-role=memberSignature] {
-	font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
 .ipsBreadcrumb > ul > li {
-	color: #000000;
+    color: #000000;
 }
 
 html[dir="ltr"] .ipsDataList.ipsDataList_reducedSpacing .ipsDataItem_icon {
-	min-width: 44px;
+    min-width: 44px;
 }
 
 .ipsBreadcrumb.ipsBreadcrumb_top {
-	padding: 0;
-	opacity: 1;
+    padding: 0;
+    opacity: 1;
 }
 
 #ipsLayout_sidebar {
-	padding: 51px 0 15px 0;
+    padding: 51px 0 15px 0;
 }
 
-.ipsWidget.ipsWidget_vertical .ipsWidget_title, 
+.ipsWidget.ipsWidget_vertical .ipsWidget_title,
 .ipsWidget.ipsWidget_horizontal .ipsWidget_title {
-padding: 11px;
+    padding: 11px;
 }
 
 html[dir="ltr"] .ipsWidget .ipsDataItem_main.cWidgetComments {
-	line-height: 1.2;
+    line-height: 1.2;
 }
 .ipsDataItem_meta.ipsType_richText.ipsContained {
-	line-height: 1.4;
+    line-height: 1.4;
 }
 .ipsDataItem_category {
-	display: none;
+    display: none;
 }
 
-.ipsDataList.ipsDataList_zebra .ipsDataItem:not( .ipsDataItem_selected ):not( .ipsModerated ):not( .ipsDataItem_new ):not( .ipsDataItem_success ):not( .ipsDataItem_warning ):not( .ipsDataItem_error ):not( .ipsDataItem_info ):not( .ipsDataItem_status ):nth-child(even) {
-	background: transparent;
+.ipsDataList.ipsDataList_zebra .ipsDataItem:not( .ipsDataItem_selected):not( .ipsModerated):not( .ipsDataItem_new):not( .ipsDataItem_success):not( .ipsDataItem_warning):not( .ipsDataItem_error):not( .ipsDataItem_info):not( .ipsDataItem_status):nth-child(even) {
+    background: transparent;
 }
-.ipsDataList:not( .ipsGrid ) .ipsDataItem:last-child, 
+.ipsDataList:not( .ipsGrid) .ipsDataItem:last-child,
 .ipsDataList.ipsDataList_zebra > .ipsDataItem {
-	border-bottom: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
 }
 
 
 .ipsType_sectionTitle {
-	font-size: 1rem;
-	background: #2480e6;
-	color: #ffffff;
-	letter-spacing: 1px;
+    font-size: 1rem;
+    background: #405d7d;
+    color: #ffffff;
+    letter-spacing: 1px;
 }
 
-a.ipsType_sectionTitle, 
+a.ipsType_sectionTitle,
 .ipsType_sectionTitle a {
-	color: #ffffff;
+    color: #ffffff;
 }
 
-a.ipsType_sectionTitle:hover, 
+a.ipsType_sectionTitle:hover,
 .ipsType_sectionTitle a:hover {
-	color: #000;
+    color: #000;
 }
 
 .cForumToggle {
-	opacity: 1;
+    opacity: 1;
 }
 
 .cForumList .ipsDataItem_main {
-	padding-left: 1rem;
+    padding-left: 1rem;
 }
 
 .ipsWidget.ipsWidget_vertical .ipsWidget_title,
 .ipsType_sectionTitle {
-	text-transform: none;
-	font-weight: 100;
+    text-transform: none;
+    font-weight: 100;
 }
 .ipsDataItem:hover {
-	background-color: aliceblue !important;
+    background-color: aliceblue !important;
 }
-.ipsItemStatus:not( .ipsItemStatus_large ) {
-	vertical-align: top;
-	position: relative;
-	top: -4px;
+.ipsItemStatus:not( .ipsItemStatus_large) {
+    vertical-align: top;
+    position: relative;
+    top: -4px;
 }
 .ipsUserPhoto_mini img {
-	width: 28px;
-	height: 28px;
-	max-width: 28px;
-	border-radius: 14px;
+    width: 28px;
+    height: 28px;
+    max-width: 28px;
+    border-radius: 14px;
 }
